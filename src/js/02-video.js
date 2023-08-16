@@ -1,9 +1,9 @@
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
+const trottle = require('lodash.throttle');
 
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
-const trottle = require('lodash.throttle');
 
 function time(obj) {
   const seconds = obj.seconds;
